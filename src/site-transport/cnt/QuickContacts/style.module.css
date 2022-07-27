@@ -1,0 +1,9 @@
+
+.rect {
+  width: 100vm;
+  height: 300px;
+  border: red 2px solid;
+
+  background-color: rgba(2, 35, 110, .95);
+
+}

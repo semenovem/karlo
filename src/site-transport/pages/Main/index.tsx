@@ -1,15 +1,25 @@
 import React from "react";
 
-import Page from "../Template";
+import {Helmet} from "react-helmet";
 
 function MainPage() {
   return (
-    <Page>
+    <>
+      <Helmet>
+        <title>Грузовые перевозки</title>
+      </Helmet>
+
+      <br/>
       <div>sdfsdfgsdf</div>
+      <br/>
       <div>sdfsdfgsdf</div>
+      <br/>
       <div>sdfsdfgsdf</div>
+      <br/>
+      <br/>
       <div>sdfsdfgsdf</div>
-    </Page>
+
+    </>
   );
 }
 

@@ -1,5 +1,4 @@
-const splashScreen = "splash-screen";
-const hamMenu = "ham-menu";
-const quickContact = "quick-contact";
+export const splashScreen = "splash-screen";
+export const hamMenu = "ham-menu";
+export const quickContact = "quick-contact";
 
-export { splashScreen, hamMenu, quickContact };
