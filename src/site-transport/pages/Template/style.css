@@ -1,22 +1,21 @@
 body {
-  display: flex;
-  flex-flow: column nowrap;
   background-color: var(--bg-color);
 }
 
-
-header {
-
+#root {
+  display: flex;
+  flex-flow: column nowrap;
+  height: 100vh;
 }
 
+header {
+}
 
 main {
   background-color: blue;
   flex-grow: 1;
 }
 
-
 footer {
   padding: var(--indent-l);
 }
-

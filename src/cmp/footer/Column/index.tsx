@@ -7,10 +7,8 @@ export interface Props {
   children: React.ReactElement[];
 }
 
-function FooterColumn (props: Props): React.ReactElement {
-  return <div className={cn(props.className, css.col)}>
-    {props.children}
-  </div>
+function FooterColumn(props: Props): React.ReactElement {
+  return <div className={cn(props.className, css.col)}>{props.children}</div>;
 }
 
-export default FooterColumn
+export default FooterColumn;

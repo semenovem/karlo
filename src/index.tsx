@@ -1,14 +1,12 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import 'styles/global.css';
-import 'styles/vars.css';
-import 'site-transport/vars.css';
-import Router from 'site-transport/router/Router';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "styles/global.css";
+import "styles/vars.css";
+import "site-transport/vars.css";
+import Router from "site-transport/router/Router";
+import reportWebVitals from "./reportWebVitals";
 
-const root = ReactDOM.createRoot(
-  document.getElementById('root') as HTMLElement
-);
+const root = ReactDOM.createRoot(document.getElementById("root") as HTMLElement);
 root.render(
   <React.StrictMode>
     <Router />

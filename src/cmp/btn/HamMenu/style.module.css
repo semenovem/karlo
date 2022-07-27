@@ -1,4 +1,7 @@
-.item {
+.btn {
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
 }
 
 /* sm */

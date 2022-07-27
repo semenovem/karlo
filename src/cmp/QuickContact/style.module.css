@@ -1,4 +1,9 @@
-.item {
+.panel {
+  border: 3px red solid;
+}
+
+.content {
+  background-color: aqua;
 }
 
 /* sm */

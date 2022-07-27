@@ -1,8 +1,8 @@
-import React from 'react';
+import React from "react";
 
-import Header from '../../cmp/Header'
-import Footer from '../../cmp/Footer'
-import './style.css';
+import Header from "../../cmp/Header";
+import Footer from "../../cmp/Footer";
+import "./style.css";
 
 export interface Props {
   children: React.ReactElement[];
@@ -11,13 +11,11 @@ export interface Props {
 function SiteTransport(props: Props) {
   return (
     <>
-      <Header />
+      <Header/>
 
-      <main >
-        {props.children}
-      </main>
+      <main>{props.children}</main>
 
-      <Footer />
+      <Footer/>
     </>
   );
 }

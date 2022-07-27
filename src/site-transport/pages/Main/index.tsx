@@ -1,21 +1,16 @@
-import React from 'react';
+import React from "react";
 
-import Page from "../Template"
-import css from './style.module.css';
+import Page from "../Template";
 
 function MainPage() {
-    return (
-      <Page >
-
-        <div>sdfsdfgsdf</div>
-        <div>sdfsdfgsdf</div>
-        <div>sdfsdfgsdf</div>
-        <div>sdfsdfgsdf</div>
-
-      </Page>
-    );
+  return (
+    <Page>
+      <div>sdfsdfgsdf</div>
+      <div>sdfsdfgsdf</div>
+      <div>sdfsdfgsdf</div>
+      <div>sdfsdfgsdf</div>
+    </Page>
+  );
 }
-
-
 
 export default MainPage;
