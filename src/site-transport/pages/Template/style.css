@@ -1,0 +1,22 @@
+body {
+  display: flex;
+  flex-flow: column nowrap;
+  background-color: var(--bg-color);
+}
+
+
+header {
+
+}
+
+
+main {
+  background-color: blue;
+  flex-grow: 1;
+}
+
+
+footer {
+  padding: var(--indent-l);
+}
+

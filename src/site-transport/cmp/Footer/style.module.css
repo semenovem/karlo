@@ -1,0 +1,41 @@
+.footer {
+
+}
+
+.nav {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+}
+
+.col {
+  margin:0 var(--indent-s);
+}
+
+.item {
+  margin: var(--indent-s) 0;
+  color: var(--footer-item-txt-color);
+}
+
+.ownership {
+  margin-top: var(--indent-m);
+  color: var(--footer-ownership-txt-color);
+}
+
+/* sm */
+@media (min-width: 576px) {}
+
+
+
+/* md */
+@media (min-width: 768px) {}
+
+
+
+/* lg */
+@media (min-width: 992px) {}
+
+
+
+/* xl */
+@media (min-width: 1200px) {}
