@@ -1,0 +1,32 @@
+
+.modal {
+  width: 100vw;
+
+  /*background-color: red;*/
+}
+
+.line {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: var(--indent-l) var(--indent-l);
+}
+
+.ic {
+  width: 36px;
+  height: 36px;
+}
+
+.txt {
+  margin-left: var(--indent-m);
+}
+
+.up {
+  width: 36px;
+  height: 36px;
+}
+
+.bottom {
+  text-align: center;
+  margin-top: calc(var(--indent-xl) * 3)
+}

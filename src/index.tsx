@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "styles/global.css";
 import "styles/vars.css";
+import "styles/style.css";
 import Transport from "site-transport/Root";
 import reportWebVitals from "./reportWebVitals";
 

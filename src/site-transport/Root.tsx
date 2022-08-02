@@ -1,14 +1,16 @@
 import React from "react";
 import Layout from "./Layout";
-import Main from "./pages/Main";
 
-import {BrowserRouter, Route, Routes} from "react-router-dom";
-import * as loc from "./../constants/locations"
-import Contacts from "./pages/Contacts";
-import NotFound from "./pages/NotFound";
+import {BrowserRouter, Outlet, Route, Routes,} from "react-router-dom";
+import * as loc from "constants/locations"
+
+import PageMain from "./pages/Main";
+import PageContacts from "./pages/Contacts";
+import PageNotFound from "./pages/NotFound";
+
+import QuickContacts from "./cnt/PopupQuickContacts";
+
 import {Helmet} from "react-helmet";
-import "./style.css";
-import "./vars.css";
 
 let countRender = 0 // dev
 
@@ -28,10 +30,17 @@ function Router() {
         <Routes>
           <Route path={loc.root} element={<Layout/>}>
 
-            <Route path="" element={<Main/>}/>
-            <Route path={loc.contacts} element={<Contacts/>}/>
+            <Route path="" element={<WrapMain/>}>
+              <Route path={loc.quickContacts} element={<QuickContacts/>}/>
+            </Route>
 
-            <Route path="*" element={<NotFound/>}/>
+            <Route path={loc.contacts} element={<WrapContacts/>}>
+              <Route path={loc.quickContacts} element={<QuickContacts/>}/>
+            </Route>
+
+            <Route path="*" element={<WrapNotFound/>}>
+              <Route path={loc.quickContacts} element={<QuickContacts/>}/>
+            </Route>
 
           </Route>
         </Routes>
@@ -41,3 +50,8 @@ function Router() {
 }
 
 export default Router;
+
+
+const WrapMain = () => (<><Outlet/><PageMain/></>)
+const WrapContacts = () => (<><Outlet/><PageContacts/></>)
+const WrapNotFound = () => (<><Outlet/><PageNotFound/></>)

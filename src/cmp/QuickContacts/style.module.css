@@ -1,0 +1,42 @@
+.panel {
+  border: 3px chocolate solid;
+
+  background-color: #c3cacc
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--indent-m) var(--indent-m);
+}
+
+
+.cross, .crossDim {
+  width: var(--icon-size-m);
+  height: var(--icon-size-m);
+}
+
+.title {
+  font-size: 24px;
+}
+
+.content {
+
+}
+
+/* sm */
+@media (min-width: 576px) {
+}
+
+/* md */
+@media (min-width: 768px) {
+}
+
+/* lg */
+@media (min-width: 992px) {
+}
+
+/* xl */
+@media (min-width: 1200px) {
+}

@@ -1,0 +1,32 @@
+.pos {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.modal {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border: 3px red dashed;
+  width: 100vw;
+  height: 100vh;
+  background: none;
+}
+
+.overlay {
+  background-color: #999;
+  pointer-events: none;
+  z-index: 100;
+  opacity: 0.95;
+}
+
+.content {
+  pointer-events: auto;
+  z-index: 101;
+
+  box-shadow: #282c34 15px 15px 20px 5px;
+}

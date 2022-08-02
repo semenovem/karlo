@@ -1,9 +1,7 @@
-.panel {
-  border: 3px red solid;
-}
-
-.content {
-  background-color: aqua;
+.ic {
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
 }
 
 /* sm */

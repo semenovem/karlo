@@ -9,6 +9,20 @@
   --indent-xxl: 48px;
 
   --max-width-limit: 1400px;
+
+
+  --bg-color: #ececec;
+
+  --footer-item-txt-color: #929292;
+
+  --footer-ownership-txt-color: #929292;
+
+  --icon-cross-size: 24px;
+
+  --icon-size-s: 18px;
+  --icon-size-m: 24px;
+  --icon-size-l: 36px;
+
 }
 
 /* sm */

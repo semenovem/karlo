@@ -18,7 +18,6 @@ function MainPage() {
       <br/>
       <br/>
       <div>sdfsdfgsdf</div>
-
     </>
   );
 }

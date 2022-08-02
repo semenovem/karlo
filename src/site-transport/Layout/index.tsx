@@ -3,7 +3,6 @@ import {Outlet} from "react-router-dom";
 
 import Header from "../cnt/Header";
 import Footer from "../cnt/Footer";
-import Portals from "./Portals";
 
 export interface Props {
   children?: React.ReactElement;
@@ -19,8 +18,6 @@ function Layout(props: Props) {
       </main>
 
       <Footer/>
-
-      <Portals/>
     </>
   );
 }
