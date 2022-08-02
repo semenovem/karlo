@@ -33,7 +33,7 @@ textarea {
   letter-spacing: inherit;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, p, hr {
   margin: 0;
   padding: 0;
 }
@@ -47,9 +47,9 @@ a {
   text-decoration: none;
 }
 
-p {
-  margin-top: 16px;
-  margin-bottom: 16px;
+dialog {
+  padding: 0;
+  border: 0
 }
 
 .js-focus-visible :focus:not(.focus-visible) {

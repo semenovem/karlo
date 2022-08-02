@@ -19,11 +19,3 @@ main {
 footer {
   padding: var(--indent-l);
 }
-
-
-#modal {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-}

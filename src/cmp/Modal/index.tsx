@@ -5,7 +5,7 @@ import css from "./style.module.css"
 
 export interface Props {
   classname?: string
-  children?: React.ReactElement
+  children?: React.ReactElement[] | React.ReactElement
   onClose: () => void
 }
 
@@ -17,19 +17,19 @@ export default class Modal extends React.Component<Props> {
   }
 
   private handleOverlayClick = (e: React.MouseEvent<HTMLElement>) => {
-    console.log(e)
+    this.props.onClose()
   }
 
   render() {
     const p = this.props
 
     return (
-      <dialog className={css.modal} onClick={this.handleOverlayClick} open>
-        <div className={cn(css.pos, css.content, p.classname)}>
+      <dialog className={cn("g-splash-screen", css.modal)} open>
+        <div className={cn("g-splash-screen", css.overlay)} onClick={this.handleOverlayClick}/>
+
+        <div className={cn(css.content, p.classname)} onClick={this.handleOverlayClick}>
           {p.children}
         </div>
-
-        <div className={cn(css.pos, css.overlay)}/>
       </dialog>
     )
   }

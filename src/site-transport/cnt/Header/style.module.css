@@ -1,14 +1,9 @@
 .header {
-  height: 50px;
-  padding: var(--indent-s) var(--indent-s);
+  height: 70px;
+  padding: var(--indent-m) var(--indent-m);
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.btnHum {
-  width: 36px;
-  height: 36px;
 }
 
 /* sm */

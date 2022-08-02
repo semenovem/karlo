@@ -4,6 +4,26 @@
   cursor: pointer;
 }
 
+.small {
+  width: var(--icon-size-s);
+  height: var(--icon-size-s);
+}
+
+.medium {
+  width: var(--icon-size-m);
+  height: var(--icon-size-m);
+}
+
+.large {
+  width: var(--icon-size-l);
+  height: var(--icon-size-l);
+}
+
+.xl {
+  width: var(--icon-size-xl);
+  height: var(--icon-size-xl);
+}
+
 /* sm */
 @media (min-width: 576px) {
 }

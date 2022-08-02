@@ -1,52 +1,60 @@
 import React from "react";
 import Modal from "cmp/Modal";
-import QuickContacts from "cmp/QuickContacts";
 
 import Icon, {kind} from "cmp/Icon";
-import BtnIcon, {kind as btnKind} from "cmp/btn/Btn";
+import BtnIcon, {kind as btnKind, size as btnSize} from "cmp/btn/Btn";
 
 import css from "./style.module.css"
+import BtnCross from "../../../cmp/btn/Cross";
+import cn from "classnames";
+import {useNavigate} from "react-router-dom";
 
 export interface Props {
 
 }
 
 export default function PopupQuickContacts(p: Props) {
-
-  const handleClose = () => {
-    console.log(">>>>>>>>>>>>>> close modal .......... ")
-  }
+  const navigate = useNavigate();
 
   return (
-    <Modal classname={css.modal} onClose={handleClose}>
-      <QuickContacts title="Контакты" onClose={handleClose}>
+    <Modal classname={css.modal} onClose={() => navigate(-1)}>
 
+      <div className={css.top}>
+        <BtnCross onClick={() => navigate(-1)} className={css.cross}/>
+        <h5 className={css.title}>Контакты</h5>
+        <div className={css.crossDim}/>
+      </div>
+
+      <hr className={css.sep}/>
+
+      <div className={css.content}>
         <Line icon={kind.whatsapp} text="Написать в whatsapp"/>
-        <Line icon={kind.whatsapp} text="Написать в telegram"/>
-        <Line icon={kind.whatsapp} text="Написать письмо"/>
+        <Line icon={kind.telegram} text="Написать в telegram"/>
+        <Line icon={kind.eMailRu} text="Написать письмо"/>
+      </div>
 
-        <div className={css.bottom}>
-
-          <BtnIcon
-            kind={btnKind.arrowUp}
-            onClick={console.log}
-            ariaLabel="Закрыть"
-            className={css.up}
-          />
-
-        </div>
-
-      </QuickContacts>
+      <div className={css.bottom}>
+        <BtnIcon
+          size={btnSize.xl}
+          kind={btnKind.arrowUp}
+          onClick={() => navigate(-1)}
+          ariaLabel="Закрыть"
+        />
+      </div>
     </Modal>
   )
 }
 
-
 function Line(p: any) {
   return (
     <div className={css.line}>
-      <Icon kind={p.icon} className={css.ic}/>
-      <div className={css.txt}>{p.text}</div>
+      <Icon kind={p.icon} className={css.ic} size={btnSize.xl}/>
+      <div className={cn("f-quick-contacts", css.txt)}>{p.text}</div>
     </div>
   )
+}
+
+
+function onClose() {
+
 }

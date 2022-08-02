@@ -1,7 +1,7 @@
 import React from "react";
 import cn from "classnames";
 import BtnHum from "cmp/btn/HamMenu";
-import BtnIcon, {kind as IconKind} from "cmp/btn/Btn";
+import Btn, {kind as icKind, size as icSize} from "cmp/btn/Btn";
 
 import * as loc from "../../../constants/locations"
 import css from "./style.module.css";
@@ -17,15 +17,16 @@ function Header(props: Props): React.ReactElement {
   return (
     <header className={cn(css.header, props.className)}>
 
-      <BtnHum className={css.btnHum} onOpen={() => {
+      <BtnHum className={css.btnHum} size={icSize.xl} onOpen={() => {
         navigate(loc.hamMenu);
       }}/>
 
-      <div>Грузовые перевозки</div>
+      <h1 className={"f-header-title"}>Грузовые перевозки</h1>
 
-      <BtnIcon
+      <Btn
         className={css.btnHum}
-        kind={IconKind.whatsapp}
+        kind={icKind.whatsapp}
+        size={icSize.xl}
         ariaLabel={"Открыть контакты"}
         onClick={() => navigate(loc.quickContacts)}
       />

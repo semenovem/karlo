@@ -1,25 +1,25 @@
 import React from "react";
 import cn from "classnames";
 
-import css from "./style.module.css";
-
-import Icon, {kind} from "cmp/Icon"
+import Icon, {kind, size} from "cmp/Icon"
 
 export {
-  kind
+  kind, size
 }
 
 export interface Props {
   className?: string;
   onClick: () => void;
   kind: kind;
+  size?: size;
   ariaLabel: string;
 }
 
 export default function Btn(p: Props) {
   return <Icon
     kind={p.kind}
-    className={cn(css.btn, p.className)}
+    {...(p.size && {size: p.size})}
+    {...(p.className && {className: p.className})}
     render={(cls, st) => (
       <button
         className={cn(cls, p.className)}
