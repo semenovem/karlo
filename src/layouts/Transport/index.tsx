@@ -1,5 +1,5 @@
 import React from "react";
-import {Outlet} from "react-router-dom";
+import { Outlet } from "react-router-dom";
 
 import Header from "blocks/Header";
 import Footer from "blocks/Footer";
@@ -11,13 +11,13 @@ export interface Props {
 export default function Layout(props: Props) {
   return (
     <>
-      <Header/>
+      <Header />
 
       <main>
-        <Outlet/>
+        <Outlet />
       </main>
 
-      <Footer/>
+      <Footer />
     </>
   );
 }

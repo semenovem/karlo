@@ -1,7 +1,7 @@
 import React from "react";
 import cn from "classnames";
 
-import Btn, {kind, size} from "../Btn";
+import Btn, { kind, size } from "../Btn";
 
 import css from "./style.module.css";
 
@@ -16,7 +16,7 @@ const BtnHamMenu: React.FC<Props> = (p: Props) => (
     onClick={p.onOpen}
     className={cn(css.btn, p.className)}
     kind={kind.hum}
-    {...(p.size && {size: p.size})}
+    {...(p.size && { size: p.size })}
     ariaLabel="Открыть меню"
   />
 );

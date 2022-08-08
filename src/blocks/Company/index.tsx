@@ -1,10 +1,10 @@
 import React from "react";
 import BlockPoster from "cmp/BlockPoster";
 
-import css from "./style.module.css"
+import css from "./style.module.css";
 import cn from "classnames";
 
-import bgImg from "./assets/img.jpg"
+import bgImg from "./assets/img.jpg";
 
 export interface Props {
   children?: React.ReactElement;
@@ -17,9 +17,9 @@ export default function Company(props: Props) {
       <BlockPoster bgImg={bgImg} header="О КОМПАНИИ" />
 
       постер блока
-      <br/>
+      <br />
       постер блока
-      <br/>
+      <br />
 
     </div>
   );

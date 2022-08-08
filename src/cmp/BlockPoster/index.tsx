@@ -1,6 +1,6 @@
 import React from "react";
 
-import css from "./style.module.css"
+import css from "./style.module.css";
 import cn from "classnames";
 
 export interface Props {
@@ -12,7 +12,7 @@ export interface Props {
 
 export default function BlockPoster(p: Props) {
 
-  const st: React.CSSProperties = {backgroundImage: "url(" + p.bgImg + ")"}
+  const st: React.CSSProperties = { backgroundImage: "url(" + p.bgImg + ")" };
 
   return (
     <div className={cn(css.blk)} style={st}>

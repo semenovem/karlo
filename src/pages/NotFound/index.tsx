@@ -1,6 +1,6 @@
 import React from "react";
 
-import {Helmet} from "react-helmet";
+import { Helmet } from "react-helmet";
 
 function NotFound() {
   return (
@@ -9,13 +9,13 @@ function NotFound() {
         <title>404 страница не найдена</title>
       </Helmet>
 
-      <div style={{padding: "1rem"}}>
+      <div style={{ padding: "1rem" }}>
         <p>404</p>
       </div>
 
-      <br/>
+      <br />
       <div>на главную</div>
-      <br/>
+      <br />
 
     </>
   );

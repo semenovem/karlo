@@ -1,6 +1,6 @@
 import React from "react";
 
-import {Helmet} from "react-helmet";
+import { Helmet } from "react-helmet";
 
 function Contacts() {
   return (
@@ -9,13 +9,13 @@ function Contacts() {
         <title>Контакты организации</title>
       </Helmet>
 
-      <br/>
+      <br />
       <div>телефон</div>
-      <br/>
+      <br />
       <div>телеграм</div>
-      <br/>
+      <br />
       <div>ватсап</div>
-      <br/>
+      <br />
 
 
     </>

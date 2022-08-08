@@ -1,13 +1,13 @@
 import React from "react";
 import cn from "classnames";
 import BtnHum from "cmp/btn/HamMenu";
-import Btn, {kind as icKind, size as icSize} from "cmp/btn/Btn";
+import Btn, { kind as icKind, size as icSize } from "cmp/btn/Btn";
 
-import * as loc from "constants/locations"
+import * as loc from "constants/locations";
 
 import css from "./style.module.css";
 
-import {useNavigate} from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 export interface Props {
   className?: string;
@@ -21,7 +21,7 @@ function Header(props: Props): React.ReactElement {
 
       <BtnHum className={css.btnHum} size={icSize.xl} onOpen={() => {
         navigate(loc.hamMenu);
-      }}/>
+      }} />
 
       <h1 className={"f-header-title"}>Грузовые перевозки</h1>
 
