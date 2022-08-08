@@ -20,6 +20,7 @@ yarn-error.log*
 
 !.eslintrc.json
 !.stylelintrc
+!.stylelintignore
 
 !.prettierignore
 !.prettierrc.json

@@ -4,20 +4,25 @@ import React from 'react';
 import bgImg from './assets/img.jpg';
 import css from './style.module.css';
 
+import Text, { Paragraph } from 'cmp/block/Text';
 import BlockPoster from 'cmp/BlockPoster';
 
 export interface Props {
   children?: React.ReactElement;
+  classname?: string;
 }
 
-export default function Company(props: Props) {
+export default function Company(p: Props) {
   return (
-    <div className={cn(css.blk)}>
+    <article className={cn(css.blk, p.classname)}>
       <BlockPoster bgImg={bgImg} header='О КОМПАНИИ' />
-      постер блока
+
+      <Text>
+        <Paragraph>Параграф 1</Paragraph>
+
+        <Paragraph>Параграф 2</Paragraph>
+      </Text>
       <br />
-      постер блока
-      <br />
-    </div>
+    </article>
   );
 }

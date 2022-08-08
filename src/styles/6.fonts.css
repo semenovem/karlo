@@ -1,9 +1,24 @@
+/* Пункт меню в быстрых контактах (например "Написать в whatsapp") */
 .f-quick-contacts {
   font-size: 20px;
   font-weight: bold;
 }
 
+/* Огравление в header - шапка сайта (например: "Грузовые перевозки") */
 .f-header-title {
   font-size: 20px;
   font-weight: bold;
+}
+
+/* Оглавление блока / модуля (например "О КОМПАНИИ") */
+.f-block-header {
+  font-size: 36px;
+  font-weight: bold;
+  color: #282c34;
+}
+
+/* Главный текст внутри блока */
+.f-block-paragraph {
+  font-size: 18px;
+  color: #282c34;
 }

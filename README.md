@@ -6,21 +6,6 @@
 
 ### `npm run build`
 
-```
-"\_disabled_extends": "plugin:jsx-a11y/recommended"
+> настройка eslint, stylelint, prettier  
+https://tproger.ru/articles/podgotovka-okruzhenija-react-prilozhenija-vscode-prettier-eslint-stylelint-husky/
 
-
-rules
-    "sort-imports": [
-      "error",
-      {
-        "ignoreCase": false,
-        "ignoreDeclarationSort": false,
-        "ignoreMemberSort": false,
-        "memberSyntaxSortOrder": ["none", "all", "multiple", "single"],
-        "allowSeparatedGroups": false
-      }
-    ]
-
-
-```

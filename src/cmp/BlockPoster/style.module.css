@@ -1,7 +1,21 @@
 .blk {
-  height: 300px;
-  border: 2px red dashed;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.bg {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  position: absolute;
+  opacity: .3;
+  height: 100%;
+  width: 100%;
+}
+
+.title {
+  position: relative;
 }

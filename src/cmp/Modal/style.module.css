@@ -4,13 +4,23 @@
 
 .overlay {
   background-color: #999;
-  z-index: 100;
-  opacity: 0.95;
+  opacity: 0.90;
+  animation-duration: 300ms;
+  animation-name: appearance;
 }
 
 .content {
   position: relative;
   pointer-events: auto;
-  z-index: 101;
   box-shadow: var(--shadow-modal);
+}
+
+@keyframes appearance {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: .8;
+  }
 }
