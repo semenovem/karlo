@@ -3,8 +3,10 @@ import cn from "classnames";
 import BtnHum from "cmp/btn/HamMenu";
 import Btn, {kind as icKind, size as icSize} from "cmp/btn/Btn";
 
-import * as loc from "../../../constants/locations"
+import * as loc from "constants/locations"
+
 import css from "./style.module.css";
+
 import {useNavigate} from "react-router-dom";
 
 export interface Props {

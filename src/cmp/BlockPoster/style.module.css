@@ -1,0 +1,7 @@
+.blk {
+  height: 300px;
+  border: 2px red dashed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}

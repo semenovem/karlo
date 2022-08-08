@@ -1,14 +1,14 @@
 import React from "react";
 import {Outlet} from "react-router-dom";
 
-import Header from "../cnt/Header";
-import Footer from "../cnt/Footer";
+import Header from "blocks/Header";
+import Footer from "blocks/Footer";
 
 export interface Props {
   children?: React.ReactElement;
 }
 
-function Layout(props: Props) {
+export default function Layout(props: Props) {
   return (
     <>
       <Header/>
@@ -21,5 +21,3 @@ function Layout(props: Props) {
     </>
   );
 }
-
-export default Layout;

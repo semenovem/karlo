@@ -1,14 +1,14 @@
 import React from "react";
-import Layout from "./Layout";
+import Layout from "layouts/Transport";
 
 import {BrowserRouter, Outlet, Route, Routes,} from "react-router-dom";
 import * as loc from "constants/locations"
 
-import PageMain from "./pages/Main";
-import PageContacts from "./pages/Contacts";
-import PageNotFound from "./pages/NotFound";
+import PageMain from "pages/Main";
+import PageContacts from "pages/Contacts";
+import PageNotFound from "pages/NotFound";
 
-import QuickContacts from "./cnt/PopupQuickContacts";
+import QuickContacts from "cnt/PopupQuickContacts";
 
 import {Helmet} from "react-helmet";
 

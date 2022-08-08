@@ -4,8 +4,8 @@ import Modal from "cmp/Modal";
 import Icon, {kind} from "cmp/Icon";
 import BtnIcon, {kind as btnKind, size as btnSize} from "cmp/btn/Btn";
 
+import BtnCross from "cmp/btn/Cross";
 import css from "./style.module.css"
-import BtnCross from "../../../cmp/btn/Cross";
 import cn from "classnames";
 import {useNavigate} from "react-router-dom";
 
