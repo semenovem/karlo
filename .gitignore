@@ -19,6 +19,7 @@ yarn-error.log*
 !.editorconfig
 
 !.eslintrc.json
+!.stylelintrc
 
 !.prettierignore
 !.prettierrc.json

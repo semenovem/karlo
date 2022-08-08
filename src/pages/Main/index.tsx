@@ -1,8 +1,8 @@
-import React from "react";
+import React from 'react';
 
-import { Helmet } from "react-helmet";
+import { Helmet } from 'react-helmet';
 
-import BlockCompany from "blocks/Company";
+import BlockCompany from 'blocks/Company';
 
 function MainPage() {
   return (

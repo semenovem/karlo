@@ -1,8 +1,8 @@
-import React from "react";
-import { Outlet } from "react-router-dom";
+import React from 'react';
+import { Outlet } from 'react-router-dom';
 
-import Header from "blocks/Header";
-import Footer from "blocks/Footer";
+import Footer from 'blocks/Footer';
+import Header from 'blocks/Header';
 
 export interface Props {
   children?: React.ReactElement;

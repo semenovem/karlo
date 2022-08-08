@@ -1,9 +1,9 @@
-import React from "react";
-import cn from "classnames";
+import cn from 'classnames';
+import React from 'react';
 
-import Btn, { kind, size } from "../Btn";
+import css from './style.module.css';
 
-import css from "./style.module.css";
+import Btn, { kind, size } from '../Btn';
 
 export interface Props {
   className?: string;
@@ -17,7 +17,7 @@ const BtnHamMenu: React.FC<Props> = (p: Props) => (
     className={cn(css.btn, p.className)}
     kind={kind.hum}
     {...(p.size && { size: p.size })}
-    ariaLabel="Открыть меню"
+    ariaLabel='Открыть меню'
   />
 );
 

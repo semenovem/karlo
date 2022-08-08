@@ -1,7 +1,7 @@
-import React from "react";
-import cn from "classnames";
+import cn from 'classnames';
+import React from 'react';
 
-import css from "./style.module.css";
+import css from './style.module.css';
 
 export interface Props {
   className?: string;

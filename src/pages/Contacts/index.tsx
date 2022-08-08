@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react';
 
-import { Helmet } from "react-helmet";
+import { Helmet } from 'react-helmet';
 
 function Contacts() {
   return (
@@ -16,8 +16,6 @@ function Contacts() {
       <br />
       <div>ватсап</div>
       <br />
-
-
     </>
   );
 }

@@ -1,14 +1,14 @@
-import React from "react";
-import cn from "classnames";
+import cn from 'classnames';
+import React from 'react';
 
-import css from "./style.module.css";
+import css from './style.module.css';
 
-import cross from "assets/icons/cross.svg";
-import whatsapp from "assets/icons/whatsapp.svg";
-import burger from "assets/icons/3-line.svg";
-import arrowUp from "assets/icons/arrow-up.svg";
-import msgTelegram from "assets/icons/msg-telegram.svg";
-import eMailRu from "assets/icons/email-mail.ru.svg";
+import burger from 'assets/icons/3-line.svg';
+import arrowUp from 'assets/icons/arrow-up.svg';
+import cross from 'assets/icons/cross.svg';
+import eMailRu from 'assets/icons/email-mail.ru.svg';
+import msgTelegram from 'assets/icons/msg-telegram.svg';
+import whatsapp from 'assets/icons/whatsapp.svg';
 
 export enum kind {
   hum = 1,
@@ -35,9 +35,9 @@ export interface Props {
 
 export default function Icon(p: Props) {
   const cls = cn(css.ic, p.className, si(p.size));
-  const st: React.CSSProperties = { backgroundImage: "url(" + ki(p.kind) + ")" };
+  const st: React.CSSProperties = { backgroundImage: 'url(' + ki(p.kind) + ')' };
 
-  if (typeof p.size === "number" && p.size > 0) {
+  if (typeof p.size === 'number' && p.size > 0) {
     st.width = `${p.size}px`;
     st.height = `${p.size}px`;
   }
@@ -46,12 +46,7 @@ export default function Icon(p: Props) {
     return p.render(cls, st);
   }
 
-  return (
-    <div
-      className={cls}
-      style={st}
-    />
-  );
+  return <div className={cls} style={st} />;
 }
 
 function si(s: size | undefined): string {
@@ -65,7 +60,7 @@ function si(s: size | undefined): string {
     case size.xl:
       return css.xl;
   }
-  return "";
+  return '';
 }
 
 function ki(k: kind): string {
@@ -83,5 +78,5 @@ function ki(k: kind): string {
     case kind.eMailRu:
       return eMailRu;
   }
-  return "";
+  return '';
 }

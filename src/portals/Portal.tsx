@@ -1,6 +1,7 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import { portal } from "constants/dom-id";
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+import { portal } from 'constants/dom-id';
 
 interface Props {
   children: React.ReactElement;

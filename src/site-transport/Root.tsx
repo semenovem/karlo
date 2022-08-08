@@ -1,16 +1,15 @@
-import React from "react";
-import Layout from "layouts/Transport";
+import React from 'react';
 
-import { BrowserRouter, Outlet, Route, Routes } from "react-router-dom";
-import * as loc from "constants/locations";
+import { Helmet } from 'react-helmet';
+import { BrowserRouter, Outlet, Route, Routes } from 'react-router-dom';
 
-import PageMain from "pages/Main";
-import PageContacts from "pages/Contacts";
-import PageNotFound from "pages/NotFound";
+import QuickContacts from 'cnt/PopupQuickContacts';
+import * as loc from 'constants/locations';
+import Layout from 'layouts/Transport';
 
-import QuickContacts from "cnt/PopupQuickContacts";
-
-import { Helmet } from "react-helmet";
+import PageContacts from 'pages/Contacts';
+import PageMain from 'pages/Main';
+import PageNotFound from 'pages/NotFound';
 
 let countRender = 0; // dev
 
@@ -23,14 +22,13 @@ function Router() {
   return (
     <>
       <Helmet>
-        <meta name="theme-color" content="#2A0505" />
+        <meta name='theme-color' content='#2A0505' />
       </Helmet>
 
       <BrowserRouter>
         <Routes>
           <Route path={loc.root} element={<Layout />}>
-
-            <Route path="" element={<WrapMain />}>
+            <Route path='' element={<WrapMain />}>
               <Route path={loc.quickContacts} element={<QuickContacts />} />
             </Route>
 
@@ -38,10 +36,9 @@ function Router() {
               <Route path={loc.quickContacts} element={<QuickContacts />} />
             </Route>
 
-            <Route path="*" element={<WrapNotFound />}>
+            <Route path='*' element={<WrapNotFound />}>
               <Route path={loc.quickContacts} element={<QuickContacts />} />
             </Route>
-
           </Route>
         </Routes>
       </BrowserRouter>
@@ -51,7 +48,21 @@ function Router() {
 
 export default Router;
 
-
-const WrapMain = () => (<><Outlet /><PageMain /></>);
-const WrapContacts = () => (<><Outlet /><PageContacts /></>);
-const WrapNotFound = () => (<><Outlet /><PageNotFound /></>);
+const WrapMain = () => (
+  <>
+    <Outlet />
+    <PageMain />
+  </>
+);
+const WrapContacts = () => (
+  <>
+    <Outlet />
+    <PageContacts />
+  </>
+);
+const WrapNotFound = () => (
+  <>
+    <Outlet />
+    <PageNotFound />
+  </>
+);

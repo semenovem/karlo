@@ -1,9 +1,7 @@
-
 .modal {
   background-color: #c3cacc;
-  padding-bottom: var(--indent-l)
+  padding-bottom: var(--indent-l);
 }
-
 
 .sep {
   border: none;
@@ -25,9 +23,8 @@
 
 .bottom {
   text-align: center;
-  margin-top: calc(var(--indent-xl) * 3)
+  margin-top: calc(var(--indent-xl) * 3);
 }
-
 
 .top {
   display: flex;
@@ -36,7 +33,8 @@
   padding: var(--indent-l) var(--indent-l);
 }
 
-.cross, .crossDim {
+.cross,
+.crossDim {
   width: var(--icon-size-m);
   height: var(--icon-size-m);
 }
@@ -46,6 +44,4 @@
 }
 
 .content {
-
 }
-

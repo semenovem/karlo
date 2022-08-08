@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react';
 
-import Icon, { kind } from "../Btn";
+import Icon, { kind } from '../Btn';
 
 export interface Props {
   className?: string;
@@ -8,12 +8,7 @@ export interface Props {
 }
 
 const Cross: React.FC<Props> = ({ className, onClick }: Props) => (
-  <Icon
-    onClick={onClick}
-    className={className}
-    kind={kind.cross}
-    ariaLabel="Закрыть"
-  />
+  <Icon onClick={onClick} className={className} kind={kind.cross} ariaLabel='Закрыть' />
 );
 
 export default Cross;
