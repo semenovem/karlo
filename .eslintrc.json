@@ -1,0 +1,12 @@
+{
+  "extends": [
+    "react-app",
+    "prettier"
+  ],
+  "plugins": [
+    "jsx-a11y"
+  ],
+  "rules": {
+    "max-len": ["error", {"code": 120, "ignoreUrls": true}]
+  }
+}
