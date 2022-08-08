@@ -1,6 +1,5 @@
 :root {
-  --font-size-base: 24px;
-
+  /* Отступы */
   --indent-xs: 4px;
   --indent-s: 8px;
   --indent-m: 16px;
@@ -8,23 +7,25 @@
   --indent-xl: 36px;
   --indent-xxl: 48px;
 
-  --max-width-limit: 1400px;
+  /* Глобальный цвет фона  */
   --bg-color: #ececec;
+
+  /* Footer */
   --footer-item-txt-color: #929292;
   --footer-ownership-txt-color: #929292;
 
-  --icon-cross-size: 24px;
-
+  /* Размеры иконок */
   --icon-size-s: 18px;
   --icon-size-m: 24px;
   --icon-size-l: 36px;
   --icon-size-xl: 48px;
 
+  /* Тени */
   --shadow-modal: 15px 15px 15px 5px #717070;
-
-  --shadow-block: #282c34 15px 15px 10px 5px;
-  --shadow-elem: 0 0 10px 5px rgba(221, 221, 221, 1);
+  --shadow-block: 5px 5px 10px 3px #ccc;
+  --shadow-elem: 5px 5px 5px rgba(221, 221, 221, 1);
   --shadow-item: #282c34 15px 15px 10px 5px;
+
 }
 
 /* sm */

@@ -3,6 +3,7 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 
 import BlockCompany from 'blocks/Company';
+import BlockPrices from 'blocks/Prices';
 
 function MainPage() {
   return (
@@ -13,16 +14,7 @@ function MainPage() {
 
       <BlockCompany />
 
-      <br />
-
-      <div>sdfsdfgsdf</div>
-      <br />
-      <div>sdfsdfgsdf</div>
-      <br />
-      <div>sdfsdfgsdf</div>
-      <br />
-      <br />
-      <div>sdfsdfgsdf</div>
+      <BlockPrices classname='g-block-indent-top' />
     </>
   );
 }

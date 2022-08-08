@@ -12,7 +12,7 @@ interface PropsParagraph {
   children: React.ReactNode;
 }
 
-export default function Text(p: Props) {
+export default function TextPanel(p: Props) {
   return <div className={cn(css.txt, p.classname)}>{p.children}</div>;
 }
 

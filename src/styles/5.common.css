@@ -8,6 +8,26 @@
   height: 100vh;
 }
 
+/* Делает два противоположных уголка тенями */
 .g-corner2 {
   box-shadow: -20px 20px 0 -17px #eee, 20px -20px 0 -17px #eee, 20px 20px 0 -20px #592385, 0 0 0 2px #592385;
+}
+
+/* Для блоков внутри тега <main> - горизонтальные отступы */
+.g-block-indent-horiz {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+/* Для блоков внутри тега <main> - вертикальный отступ от предыдущего блока */
+.g-block-indent-top {
+  margin-top: var(--indent-xxl);
+}
+
+
+/* Для элементов */
+
+/* Отступ от предыдущего элемента */
+.g-elem-indent-top {
+  margin-top: var(--indent-l);
 }

@@ -3,18 +3,18 @@ import React from 'react';
 
 import css from './style.module.css';
 
-export interface Props {
+interface Props {
   className?: string;
   content: string;
   onClick: () => any;
+  loc: string; // путь перехода
 }
 
-function FooterItem(props: Props): React.ReactElement {
+export default function FooterItem(p: Props): React.ReactElement {
+  // TODO обработать p.href - сделать ссылку
   return (
-    <a className={cn(css.item, props.className)} onClick={props.onClick}>
-      {props.content}
+    <a className={cn(css.item, p.className)} onClick={p.onClick} href={p.loc}>
+      {p.content}
     </a>
   );
 }
-
-export default FooterItem;

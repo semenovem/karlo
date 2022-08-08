@@ -1,0 +1,14 @@
+.txt {
+}
+
+.paragraph {
+
+}
+
+.txt > .paragraph {
+  margin-top: var(--indent-m);
+}
+
+.paragraph:first-child {
+  margin-top: 0;
+}

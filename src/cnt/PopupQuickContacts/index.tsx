@@ -48,5 +48,3 @@ function Line(p: any) {
     </div>
   );
 }
-
-function onClose() {}
