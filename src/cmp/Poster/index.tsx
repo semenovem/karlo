@@ -3,6 +3,8 @@ import React from 'react';
 
 import css from './style.module.css';
 
+import H2 from 'cmp/texts/Title/H2';
+
 export interface Props {
   children?: React.ReactElement;
   bgImg?: string;
@@ -17,7 +19,7 @@ export default function BlockPoster(p: Props) {
   return (
     <section className={cn(css.blk, p.classname)}>
       <div className={css.bg} style={st} />
-      <h3 className={cn(css.title, 'f-block-header')}>{p.header}</h3>
+      <H2 classname={css.title}>{p.header}</H2>
     </section>
   );
 }

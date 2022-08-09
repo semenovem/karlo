@@ -26,6 +26,14 @@
   --shadow-elem: 5px 5px 5px rgba(221, 221, 221, 1);
   --shadow-item: #282c34 15px 15px 10px 5px;
 
+  /* Заголовки */
+  --h1-text-size: 48px ;
+  --h2-text-size: 36px ;
+  --h3-text-size: 28px ;
+  --h4-text-size: 24px ;
+  --h5-text-size: 18px ;
+  --h6-text-size: 16px ;
+
 }
 
 /* sm */

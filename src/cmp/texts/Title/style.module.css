@@ -1,3 +1,34 @@
+
+.h1, h2, h3, h4, h5 ,h6 {
+  color: #282c34;
+}
+
 .h1 {
-  border: 2px red dashed;
+  font-size: var(--h1-text-size);
+  font-weight: bold;
+}
+
+.h2 {
+  font-size: var(--h2-text-size);
+  font-weight: bold;
+}
+
+.h3 {
+  font-size: var(--h3-text-size);
+  font-weight: bold;
+}
+
+.h4 {
+  font-size: var(--h5-text-size);
+  font-weight: bold;
+}
+
+.h5 {
+  font-size: var(--h5-text-size);
+  font-weight: bold;
+}
+
+.h6 {
+  font-size: var(--h6-text-size);
+  font-weight: bold;
 }

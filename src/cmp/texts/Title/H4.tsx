@@ -8,6 +8,6 @@ interface Props {
   classname?: string;
 }
 
-export default function H2(p: Props) {
-  return <h2 className={cn(css.h2, p.classname)}>{p.children}</h2>;
+export default function H4(p: Props) {
+  return <h4 className={cn(css.h4, p.classname)}>{p.children}</h4>;
 }

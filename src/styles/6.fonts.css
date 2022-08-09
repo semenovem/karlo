@@ -10,13 +10,6 @@
   font-weight: bold;
 }
 
-/* Оглавление блока / модуля (например "О КОМПАНИИ") */
-.f-block-header {
-  font-size: 36px;
-  font-weight: bold;
-  color: #282c34;
-}
-
 /* Главный текст внутри блока */
 .f-block-paragraph {
   font-size: 16px;
