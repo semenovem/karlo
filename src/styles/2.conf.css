@@ -1,4 +1,6 @@
 :root {
+  /* РАЗМЕРЫ */
+
   /* Отступы */
   --indent-xs: 4px;
   --indent-s: 8px;
@@ -7,24 +9,41 @@
   --indent-xl: 36px;
   --indent-xxl: 48px;
 
-  /* Глобальный цвет фона  */
-  --bg-color: #ececec;
-
-  /* Footer */
-  --footer-item-txt-color: #929292;
-  --footer-ownership-txt-color: #929292;
-
   /* Размеры иконок */
   --icon-size-s: 18px;
   --icon-size-m: 24px;
   --icon-size-l: 36px;
   --icon-size-xl: 48px;
 
+  /* ------------------------- */
+  /* Глобальный цвет фона  */
+  --bg-color: #ececec;
+
+  /* ------------------------- */
+  /* Footer */
+  --footer-item-txt-color: #929292;
+  --footer-ownership-txt-color: #929292;
+
+  /* ------------------------- */
   /* Тени */
   --shadow-modal: 15px 15px 15px 5px #717070;
   --shadow-block: 5px 5px 10px 3px #ccc;
   --shadow-elem: 5px 5px 5px rgba(221, 221, 221, 1);
   --shadow-item: #282c34 15px 15px 10px 5px;
+
+  /* ------------------------- */
+  /* ТЕКСТ */
+
+  /* Основной цвет */
+  --primary-font-color: #000;
+  --primary-font-size: 16px;
+
+  /* Второстепенный */
+  --secondary-font-color: #ccc;
+
+  /* Дополнительный */
+  --additional-font-color: #5e5e5e;
+  --additional-font-size: 14px;
 
   /* Заголовки */
   --h1-text-size: 48px ;
@@ -33,6 +52,11 @@
   --h4-text-size: 24px ;
   --h5-text-size: 18px ;
   --h6-text-size: 16px ;
+
+  /* Отступ слева 'красной строки' */
+  --first-line-indent: 20px
+
+
 
 }
 

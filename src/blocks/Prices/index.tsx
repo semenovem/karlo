@@ -4,8 +4,11 @@ import React from 'react';
 import bgImg from './assets/img.jpg';
 import css from './style.module.css';
 
+import PriceTable from './Table';
+
 import BlockPoster from 'cmp/Poster';
 import TextPanel, { Paragraph } from 'cmp/texts/TextPanel';
+import H4 from 'cmp/texts/Title/H5';
 
 export interface Props {
   children?: React.ReactElement;
@@ -17,14 +20,14 @@ export default function Prices(p: Props) {
     <article className={cn(css.blk, p.classname)}>
       <BlockPoster bgImg={bgImg} header='ЦЕНЫ' />
 
-      <section className='g-block-indent-horiz'>
-        <h5>Цены на перевозки</h5>
+      <section className='g-block-indent-horiz g-elem-indent-top'>
+        <PriceTable classname={css.priceTable} />
       </section>
 
-      <TextPanel classname='g-block-indent-horiz'>
-        <Paragraph>Папа Карло осуществляет грузоперевозки с 2010 года </Paragraph>
-
-        <Paragraph>Параграф 2</Paragraph>
+      <TextPanel classname='g-block-indent-horiz g-elem-indent-x2-top'>
+        <H4 classname='g-first-line-indent'>Бизнес для Бизнеса</H4>
+        <Paragraph>Для сотрудничества с организациями у нас есть особые предложения</Paragraph>
+        <Paragraph>Посмотрите раздел Сотрудничество или свяжитесь с нами</Paragraph>
       </TextPanel>
     </article>
   );
