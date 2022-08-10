@@ -11,15 +11,16 @@ export interface Props {
   header: string;
   title?: string;
   classname?: string;
+  clsTitle?: string;
 }
 
 export default function BlockPoster(p: Props) {
   const st: React.CSSProperties = { backgroundImage: 'url(' + p.bgImg + ')' };
 
   return (
-    <section className={cn(css.blk, p.classname)}>
+    <section className={cn(css.poster, p.classname)}>
       <div className={css.bg} style={st} />
-      <H2 classname={css.title}>{p.header}</H2>
+      <H2 classname={cn(css.title, p.clsTitle)}>{p.header}</H2>
     </section>
   );
 }
