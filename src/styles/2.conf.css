@@ -29,7 +29,7 @@
   --shadow-modal: 15px 15px 15px 5px #717070;
   --shadow-block: 5px 5px 10px 3px #ccc;
   --shadow-elem: 5px 5px 5px rgba(221, 221, 221, 1);
-  --shadow-item: #282c34 15px 15px 10px 5px;
+  --shadow-item: 5px 5px 5px rgba(221, 221, 221, 1);
 
   /* ------------------------- */
   /* ТЕКСТ */
@@ -39,7 +39,8 @@
   --primary-font-size: 16px;
 
   /* Второстепенный */
-  --secondary-font-color: #ccc;
+  --secondary-font-color: #5e5e5e;
+  --secondary-font-size: 15px;
 
   /* Дополнительный */
   --additional-font-color: #5e5e5e;

@@ -9,3 +9,6 @@
 > настройка eslint, stylelint, prettier  
 https://tproger.ru/articles/podgotovka-okruzhenija-react-prilozhenija-vscode-prettier-eslint-stylelint-husky/
 
+
+"extends": [
+"stylelint-config-prettier"
