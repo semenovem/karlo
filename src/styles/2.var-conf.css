@@ -30,6 +30,8 @@
   --shadow-block: 5px 5px 10px 3px #ccc;
   --shadow-elem: 0 5px 5px rgba(221, 221, 221, 1);
   --shadow-item: 5px 5px 5px rgba(221, 221, 221, 1);
+
+  --shadow-bage: 5px 5px 5px 0px rgba(52, 52, 52, 0.3);
 }
 
 /* sm */

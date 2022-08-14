@@ -1,0 +1,7 @@
+.cont {
+  height: 200px;
+  border: 2px gold dashed;
+
+  margin-left: calc(var(--i-padding-side) * -1);
+  margin-right: calc(var(--i-padding-side) * -1);
+}

@@ -1,19 +1,19 @@
-
 :root {
-
   /* Поля страницы */
-  --i-padding-both: var(--indent-l);
+  --i-padding-side: var(--indent-l);
 
-  /* Вертикальный отступ между модулями */
+  /* Вертикальный/боковой отступы между блоками */
   --i-block-top: var(--indent-xxl);
+  --i-block-side: var(--indent-xxl);
 
-  /* Вертикальный отступ между модулями */
+  /* Вертикальный/боковой отступы между модулями */
   --i-mod-top: var(--indent-l);
+  --i-mod-side: var(--indent-l);
 
-  /* Вертикальный отступ между элементами */
+  /* Вертикальный/боковой отступы между элементами */
   --i-elem-top: var(--indent-m);
+  --i-elem-side: var(--indent-m);
 }
-
 
 /* Верхний отступ между блоками */
 .i-block-top {
@@ -32,11 +32,11 @@
 
 /* Верхний отступ после постера */
 .i-after-poster-bottom {
-  margin-bottom: var(--indent-m);
+  margin-bottom: var(--indent-l);
 }
 
 /* Поля страницы (не действует на header и footer) */
 .i-page-both {
-  margin-left: var(--indent-l);
-  margin-right: var(--indent-l);
+  margin-left: var(--i-padding-side);
+  margin-right: var(--i-padding-side);
 }

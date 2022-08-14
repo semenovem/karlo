@@ -1,8 +1,7 @@
 :root {
   /* Отступ слева 'красной строки' */
-  --first-line-indent: 20px
+  --first-line-indent: 20px;
 }
-
 
 .g-splash-screen {
   position: fixed;
@@ -22,4 +21,9 @@
 /* Для элементов */
 .g-first-line-indent {
   margin-left: var(--first-line-indent);
+}
+
+.g-link-clear-style {
+  color: inherit;
+  size: inherit;
 }

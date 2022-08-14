@@ -1,14 +1,14 @@
-import a872pa799 from 'mod/vehicle/assets/preview/a872pa799.jpg';
-import b952pb190 from 'mod/vehicle/assets/preview/b952pb190.jpg';
-import c948pp799 from 'mod/vehicle/assets/preview/c948pp799.jpg';
-import k482bm197 from 'mod/vehicle/assets/preview/k482bm197.jpg';
-import k985yt799 from 'mod/vehicle/assets/preview/k985yt799.jpg';
-import n254pb799 from 'mod/vehicle/assets/preview/n254pb799.jpg';
-import n403kb799 from 'mod/vehicle/assets/preview/n403kb799.jpg';
-import o943ck790 from 'mod/vehicle/assets/preview/o943ck790.jpg';
-import x049nn799 from 'mod/vehicle/assets/preview/x049nn799.jpg';
-import x562nn799 from 'mod/vehicle/assets/preview/x562nn799.jpg';
-import y807pp799 from 'mod/vehicle/assets/preview/y807pp799.jpg';
+import a872pa799 from '3-mod/vehicle/assets/preview/a872pa799.jpg';
+import b952pb190 from '3-mod/vehicle/assets/preview/b952pb190.jpg';
+import c948pp799 from '3-mod/vehicle/assets/preview/c948pp799.jpg';
+import k482bm197 from '3-mod/vehicle/assets/preview/k482bm197.jpg';
+import k985yt799 from '3-mod/vehicle/assets/preview/k985yt799.jpg';
+import n254pb799 from '3-mod/vehicle/assets/preview/n254pb799.jpg';
+import n403kb799 from '3-mod/vehicle/assets/preview/n403kb799.jpg';
+import o943ck790 from '3-mod/vehicle/assets/preview/o943ck790.jpg';
+import x049nn799 from '3-mod/vehicle/assets/preview/x049nn799.jpg';
+import x562nn799 from '3-mod/vehicle/assets/preview/x562nn799.jpg';
+import y807pp799 from '3-mod/vehicle/assets/preview/y807pp799.jpg';
 
 // Размеры машин
 // ГАЗЕЛЬ 2004 -872 - 3.0*1.8*2.0

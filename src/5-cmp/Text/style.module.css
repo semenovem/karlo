@@ -1,0 +1,19 @@
+.txt {
+}
+
+.paragraph {
+  line-height: 24px;
+}
+
+.paragraph + .paragraph {
+  margin-top: var(--i-elem-top);
+}
+
+h1 + .paragraph,
+h2 + .paragraph,
+h3 + .paragraph,
+h4 + .paragraph,
+h5 + .paragraph,
+h6 + .paragraph {
+  margin-top: var(--i-elem-top);
+}

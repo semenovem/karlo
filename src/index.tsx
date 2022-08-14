@@ -9,7 +9,7 @@ import 'styles/6.font-styles.css';
 import 'styles/7.indent-styles.css';
 import reportWebVitals from './reportWebVitals';
 
-import Transport from 'site-transport/Root';
+import Transport from '0-site-transport/Root';
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
 root.render(

@@ -1,7 +1,0 @@
-.txt {}
-
-.paragraph {}
-
-.paragraph+.paragraph {
-  margin-top: var(--i-elem-top);
-}
