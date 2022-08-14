@@ -7,7 +7,7 @@ import BlockCompany from '2-blocks/Company';
 import BlockContacts from '2-blocks/Contacts';
 import BlockPrices from '2-blocks/Prices';
 import BlockVacancies from '2-blocks/Vacancies';
-import BlockVehicle from '2-blocks/Vehicle';
+import BlockVehicles from '2-blocks/Vehicles';
 
 export default function MainPage() {
   return (
@@ -18,7 +18,7 @@ export default function MainPage() {
 
       <BlockCompany />
       <BlockPrices classname='i-block-top' />
-      <BlockVehicle classname='i-block-top' />
+      <BlockVehicles classname='i-block-top' />
       <BlockB2b classname='i-block-top' />
       <BlockVacancies classname='i-block-top' />
       <BlockContacts classname='i-block-top' />

@@ -15,7 +15,7 @@ interface IProps {
 
 export default function BlockFooter(props: IProps): React.ReactElement {
   return (
-    <footer className={cn(props.className, css.footer)}>
+    <footer className={cn(css.footer, props.className)}>
       <div className={css.nav}>
         <Column className={css.col}>
           <Item className={css.item} content={'О Компании'} goTo={loc.company} />

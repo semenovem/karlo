@@ -1,4 +1,3 @@
-import cn from 'classnames';
 import React from 'react';
 
 import bgImg from './assets/img.jpg';
@@ -14,7 +13,7 @@ interface IProps {
   classname?: string;
 }
 
-export default function BlockVehicle(p: IProps) {
+export default function BlockVehicles(p: IProps) {
   return (
     <article className={p.classname}>
       <Poster bgImg={bgImg} header='НАШ АВТОПАРК' classname='i-after-poster-bottom' />

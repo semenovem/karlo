@@ -23,16 +23,11 @@ export function toQuickContacts(navigate: NavigateFunction, location: Location) 
     return;
   }
 
-  if (location.pathname === '/') {
+  if (location.pathname.length === 0 || location.pathname === '/') {
     navigate(quickContacts);
     return;
   }
-
-  navigate(`${location.pathname}/${quickContacts}`);
-}
-
-export function toMain(navigate: NavigateFunction, location: Location) {
-  navigate(basePath);
+  navigate(location.pathname + '/' + quickContacts);
 }
 
 export function isQuickContacts(path: string): boolean {

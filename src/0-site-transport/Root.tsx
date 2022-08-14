@@ -5,11 +5,15 @@ import { Helmet } from 'react-helmet';
 import { BrowserRouter, Route, Routes, useLocation, useNavigate } from 'react-router-dom';
 
 import Layout from '1-pages/_layouts/Transport';
+import PageB2b from '1-pages/B2b';
+import PageCompany from '1-pages/Company';
 import PageContacts from '1-pages/Contacts';
 
 import PageMain from '1-pages/Main';
 import PageNotFound from '1-pages/NotFound';
+import PagePrices from '1-pages/Priсes';
 import PageVacancies from '1-pages/Vacancies';
+import PageVehicles from '1-pages/Vehicles';
 import PopupQuickContacts from '4-cnt/PopupQuickContacts';
 import * as loc from 'dat/locations';
 
@@ -37,6 +41,10 @@ export default function Router() {
             <Route path={loc.main + '/*'} element={<PageMain />} />
             <Route path={loc.contacts + '/*'} element={<PageContacts />} />
             <Route path={loc.vacancies + '/*'} element={<PageVacancies />} />
+            <Route path={loc.company + '/*'} element={<PageCompany />} />
+            <Route path={loc.prices + '/*'} element={<PagePrices />} />
+            <Route path={loc.vehicle + '/*'} element={<PageVehicles />} />
+            <Route path={loc.b2b + '/*'} element={<PageB2b />} />
             <Route path='*' element={<PageNotFound />} />
           </Route>
         </Routes>

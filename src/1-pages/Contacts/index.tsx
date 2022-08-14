@@ -2,6 +2,8 @@ import React from 'react';
 
 import { Helmet } from 'react-helmet';
 
+import BlockContacts from '2-blocks/Contacts';
+
 export default function Contacts() {
   return (
     <>
@@ -9,13 +11,7 @@ export default function Contacts() {
         <title>Контакты организации</title>
       </Helmet>
 
-      <br />
-      <div>телефон</div>
-      <br />
-      <div>телеграм</div>
-      <br />
-      <div>ватсап</div>
-      <br />
+      <BlockContacts />
     </>
   );
 }

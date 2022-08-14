@@ -13,7 +13,7 @@ export default function Layout() {
         <Outlet />
       </main>
 
-      <BlockFooter />
+      <BlockFooter className='i-block-top' />
     </>
   );
 }
