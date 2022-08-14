@@ -1,3 +1,9 @@
+:root {
+  /* Отступ слева 'красной строки' */
+  --first-line-indent: 20px
+}
+
+
 .g-splash-screen {
   position: fixed;
   top: 0;
@@ -13,30 +19,7 @@
   box-shadow: -20px 20px 0 -17px #eee, 20px -20px 0 -17px #eee, 20px 20px 0 -20px #592385, 0 0 0 2px #592385;
 }
 
-/* Для блоков внутри тега <main> - горизонтальные отступы */
-.g-block-indent-horiz {
-  padding-left: 30px;
-  padding-right: 30px;
-}
-
-/* Для блоков внутри тега <main> - вертикальный отступ от предыдущего блока */
-.g-block-indent-top {
-  margin-top: var(--indent-xxl);
-}
-
-
 /* Для элементов */
-
-/* Отступ от предыдущего элемента */
-.g-elem-indent-top {
-  margin-top: var(--indent-m);
-}
-
-/* Двойной отступ от предыдущего элемента */
-.g-elem-indent-x2-top {
-  margin-top: calc(var(--indent-m) * 2);
-}
-
 .g-first-line-indent {
   margin-left: var(--first-line-indent);
 }

@@ -3,8 +3,8 @@ import React from 'react';
 
 import bgImg from './assets/img.jpg';
 
-import BlockPoster from 'cmp/Poster';
-import Vacancies from 'mod/vacancies/ListPreviews';
+import Poster from 'cmp/Poster';
+import Vacancies from 'mod/vacancies/Previews';
 
 interface IProps {
   children?: React.ReactElement;
@@ -14,7 +14,7 @@ interface IProps {
 export default function Company(p: IProps) {
   return (
     <article className={cn(p.classname)}>
-      <BlockPoster bgImg={bgImg} header='ВАКАНСИИ' />
+      <Poster bgImg={bgImg} header='ВАКАНСИИ' classname='i-after-poster-bottom' />
 
       <Vacancies />
     </article>

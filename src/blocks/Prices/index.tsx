@@ -6,8 +6,8 @@ import css from './style.module.css';
 
 import PriceTable from './Table';
 
-import BlockPoster from 'cmp/Poster';
-import TextPanel, { Paragraph } from 'cmp/texts/TextPanel';
+import Poster from 'cmp/Poster';
+import TextPanel, { Paragraph as P } from 'cmp/texts/TextPanel';
 import H4 from 'cmp/texts/Title/H5';
 
 export interface Props {
@@ -18,16 +18,16 @@ export interface Props {
 export default function Prices(p: Props) {
   return (
     <article className={cn(css.blk, p.classname)}>
-      <BlockPoster bgImg={bgImg} header='ЦЕНЫ' />
+      <Poster bgImg={bgImg} header='ЦЕНЫ' classname='i-after-poster-bottom' />
 
-      <section className='g-block-indent-horiz g-elem-indent-top'>
+      <section className=''>
         <PriceTable classname={css.priceTable} />
       </section>
 
-      <TextPanel classname='g-block-indent-horiz g-elem-indent-x2-top'>
+      <TextPanel classname='i-mod-top'>
         <H4 classname='g-first-line-indent'>Бизнес для Бизнеса</H4>
-        <Paragraph>Для сотрудничества с организациями у нас есть особые предложения</Paragraph>
-        <Paragraph>Посмотрите раздел Сотрудничество или свяжитесь с нами</Paragraph>
+        <P>Для сотрудничества с организациями у нас есть особые предложения</P>
+        <P>Посмотрите раздел Сотрудничество или свяжитесь с нами</P>
       </TextPanel>
     </article>
   );

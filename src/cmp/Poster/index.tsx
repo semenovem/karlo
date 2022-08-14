@@ -14,7 +14,7 @@ export interface Props {
   clsTitle?: string;
 }
 
-export default function BlockPoster(p: Props) {
+export default function Poster(p: Props) {
   const st: React.CSSProperties = { backgroundImage: 'url(' + p.bgImg + ')' };
 
   return (

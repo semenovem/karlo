@@ -16,10 +16,10 @@ export default function MainPage() {
       </Helmet>
 
       <BlockCompany />
-      <BlockPrices classname='g-block-indent-top' />
-      <Vehicle classname='g-block-indent-top' />
-      <B2b classname='g-block-indent-top' />
-      <Vacancies classname='g-block-indent-top' />
+      <BlockPrices classname='i-block-top' />
+      <Vehicle classname='i-block-top' />
+      <B2b classname='i-block-top' />
+      <Vacancies classname='i-block-top' />
     </>
   );
 }

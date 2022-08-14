@@ -17,5 +17,5 @@ export default function TextPanel(p: Props) {
 }
 
 export function Paragraph(p: PropsParagraph) {
-  return <p className={cn('f-block-paragraph', css.paragraph)}>{p.children}</p>;
+  return <p className={cn('f-main-regular', css.paragraph)}>{p.children}</p>;
 }

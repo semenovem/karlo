@@ -1,0 +1,14 @@
+.vac {
+}
+
+.vac + .vac {
+  margin-top: var(--indent-xl)
+}
+
+.responsibilities {
+  margin-top: var(--indent-s)
+}
+
+.requirements {
+  margin-top: var(--indent-s)
+}

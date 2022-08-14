@@ -1,0 +1,55 @@
+:root {
+
+  /* Основной цвет */
+  --primary-font-color: #000;
+  --primary-font-size: 16px;
+
+  /* Второстепенный */
+  --secondary-font-color: #5e5e5e;
+  --secondary-font-size: 15px;
+
+  /* Дополнительный */
+  --additional-font-color: #5e5e5e;
+  --additional-font-size: 14px;
+
+  /* Заголовки */
+  --h1-text-size: 48px ;
+  --h2-text-size: 36px ;
+  --h3-text-size: 28px ;
+  --h4-text-size: 24px ;
+  --h5-text-size: 18px ;
+  --h6-text-size: 16px ;
+}
+
+
+
+/* Пункт меню в быстрых контактах (например "Написать в whatsapp") */
+.f-quick-contacts {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Огравление в header - шапка сайта (например: "Грузовые перевозки") */
+.f-header-title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Основной текст */
+.f-main-regular {
+  font-size: 16px;
+  color: #282c34;
+}
+
+
+/* Второстепенный текст */
+.f-secondary-regular {
+  font-size: 15px;
+  color: #282c34;
+}
+
+/* Второстепенный текст, например описание вакансии  */
+.f-secondary-pale {
+  font-size: 15px;
+  color: #5e5e5e;
+}

@@ -1,3 +1,4 @@
+import cn from 'classnames';
 import React from 'react';
 
 import css from './style.module.css';
@@ -10,8 +11,8 @@ interface IProps {
   classname?: string;
 }
 
-export default function ListPreviews(p: IProps) {
-  return <div className={css.listPreview}>{renderVacancies()}</div>;
+export default function Previews(p: IProps) {
+  return <div className={cn(p.classname)}>{renderVacancies()}</div>;
 }
 
 function renderVacancies() {
@@ -19,6 +20,7 @@ function renderVacancies() {
     <section className={css.vac} key={i}>
       <H5>{vac.title}</H5>
       <div className={css.responsibilities}>{vac.responsibilities}</div>
+      <div className={css.responsibilities}>{vac.requirements}</div>
     </section>
   ));
 }

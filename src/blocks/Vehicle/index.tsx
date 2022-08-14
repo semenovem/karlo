@@ -4,7 +4,7 @@ import React from 'react';
 import bgImg from './assets/img.jpg';
 import css from './style.module.css';
 
-import BlockPoster from 'cmp/Poster';
+import Poster from 'cmp/Poster';
 import TextPanel, { Paragraph as P } from 'cmp/texts/TextPanel';
 
 import { count as countVehicles } from 'dat/vehicles';
@@ -18,9 +18,9 @@ export interface Props {
 export default function Company(p: Props) {
   return (
     <article className={cn(css.blk, p.classname)}>
-      <BlockPoster bgImg={bgImg} header='НАШ АВТОПАРК' />
+      <Poster bgImg={bgImg} header='НАШ АВТОПАРК' classname='i-after-poster-bottom' />
 
-      <TextPanel classname='g-block-indent-horiz g-elem-indent-top'>
+      <TextPanel classname=''>
         <P>
           Наш собственный автопарк - {countVehicles} машин
           <br />
@@ -30,7 +30,7 @@ export default function Company(p: Props) {
         </P>
       </TextPanel>
 
-      <ModVehicles classname='g-block-indent-horiz g-elem-indent-top' />
+      <ModVehicles classname='i-mod-top' />
     </article>
   );
 }

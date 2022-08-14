@@ -5,6 +5,8 @@
   align-items: center;
   position: relative;
   box-shadow: var(--shadow-elem);
+  margin-left: calc(var(--i-padding-both) * -1);
+  margin-right: calc(var(--i-padding-both) * -1);
 }
 
 .bg {

@@ -1,14 +1,7 @@
-.txt {
-}
+.txt {}
 
-.paragraph {
+.paragraph {}
 
-}
-
-.txt > .paragraph {
-  margin-top: var(--indent-m);
-}
-
-.paragraph:first-child {
-  margin-top: 0;
+.paragraph+.paragraph {
+  margin-top: var(--i-elem-top);
 }

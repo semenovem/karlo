@@ -5,9 +5,9 @@ import { BrowserRouter, Outlet, Route, Routes } from 'react-router-dom';
 
 import QuickContacts from 'cnt/PopupQuickContacts';
 import * as loc from 'constants/locations';
-import Layout from 'layouts/Transport';
-
 import PageContacts from 'pages/Contacts';
+import Layout from 'pages/layouts/Transport';
+
 import PageMain from 'pages/Main';
 import PageNotFound from 'pages/NotFound';
 
