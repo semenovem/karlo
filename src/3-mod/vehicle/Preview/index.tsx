@@ -3,7 +3,7 @@ import React from 'react';
 
 import css from './style.module.css';
 
-import { IVehicle, getModel } from 'dat/vehicles';
+import { getModel, IVehicle } from 'dat/vehicles';
 
 interface IProps {
   classname?: string;
@@ -13,7 +13,7 @@ interface IProps {
 export default function Preview(p: IProps) {
   return (
     <a className={cn(css.preview, p.classname)} onClick={() => onCLick(p.vehicle.id)}>
-      <img src={p.vehicle.preview} className={css.img} />
+      <img src={p.vehicle.preview} className={css.img} alt={p.vehicle.brand} />
       <div className={css.note}>
         <div className={css.model}>{getModel(p.vehicle)}</div>
         <div className={css.year}>{p.vehicle.year}</div>

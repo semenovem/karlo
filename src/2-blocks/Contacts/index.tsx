@@ -3,8 +3,8 @@ import React from 'react';
 
 import bgImg from './assets/img.jpg';
 
-import ModContacts from '3-mod/Contacts';
 import MapOffice from '3-mod/maps/Office';
+import ModContacts from '4-cnt/Contacts';
 import Poster from '5-cmp/Poster';
 
 interface IProps {

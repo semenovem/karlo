@@ -1,5 +1,7 @@
 .poster {
-  height: 250px;
+  height: calc(100vw / 3);
+  min-height: 200px;
+  max-height: 400px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -23,3 +25,26 @@
   position: relative;
   text-align: center;
 }
+
+/* sm */
+@media (min-width: 600px) {
+  .poster {
+  }
+}
+
+/* md */
+@media (min-width: 960px) {
+  .poster {
+  }
+}
+
+/* lg */
+@media (min-width: 1280px) {
+  .poster {
+  }
+}
+
+/* xl */
+@media (min-width: 1920px) {
+}
+

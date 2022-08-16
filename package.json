@@ -25,6 +25,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "deploy": "ssh spb 'sh dev/karlo/scripts/cicd/deploy.sh'",
     "test": "react-scripts test",
     "lint": "eslint './src/**/*.{ts,tsx}'",
     "prettier": "prettier --write",

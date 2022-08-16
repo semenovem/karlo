@@ -29,7 +29,7 @@ export default function BlockHeader(p: IProps): React.ReactElement {
       />
 
       <Link to={loc.path(loc.main)} className='g-link-clear-style'>
-        <h1 className={'f-header-title'}>Грузовые перевозки</h1>
+        <h1 className={cn('f-header-title', css.title)}>Грузовые перевозки</h1>
       </Link>
 
       <Btn

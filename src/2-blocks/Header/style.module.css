@@ -6,8 +6,16 @@
   align-items: center;
 }
 
+.title {
+  font-weight: 800;
+  font-size: calc(100vw / 20);
+}
+
 /* sm */
-@media (min-width: 576px) {
+@media (min-width: 480px) {
+  .title {
+    font-size: 28px;
+  }
 }
 
 /* md */

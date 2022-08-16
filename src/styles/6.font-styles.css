@@ -28,7 +28,7 @@
 .f-h5,
 .f-h6 {
   color: #282c34;
-  font-weight: bold;
+  font-weight: 800;
 }
 
 .f-h1 {
@@ -61,16 +61,11 @@
   font-weight: bold;
 }
 
-/* Огравление в header - шапка сайта (например: "Грузовые перевозки") */
-.f-header-title {
-  font-size: 20px;
-  font-weight: bold;
-}
-
 /* Основной текст */
 .f-main-regular {
   font-size: 16px;
   color: #282c34;
+  font-weight: 500;
 }
 
 /* Второстепенный текст */
@@ -89,4 +84,26 @@
 .f-banner-1 {
   font-size: 18px;
   font-weight: bold;
+}
+
+/* Второстепенный текст, например описание вакансии  */
+.f-footer-link {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+/* sm */
+@media (min-width: 600px) {
+}
+
+/* md */
+@media (min-width: 960px) {
+}
+
+/* lg */
+@media (min-width: 1280px) {
+}
+
+/* xl */
+@media (min-width: 1920px) {
 }

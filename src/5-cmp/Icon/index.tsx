@@ -5,6 +5,7 @@ import css from './style.module.css';
 
 import burger from 'assets/icons/3-line.svg';
 import arrowUp from 'assets/icons/arrow-up.svg';
+import call from 'assets/icons/call.svg';
 import cross from 'assets/icons/cross.svg';
 import eMailRu from 'assets/icons/email-mail.ru.svg';
 import msgTelegram from 'assets/icons/msg-telegram.svg';
@@ -17,6 +18,7 @@ export enum kind {
   telegram,
   eMailRu,
   arrowUp,
+  call,
 }
 
 export enum size {
@@ -77,6 +79,8 @@ function ki(k: kind): string {
       return msgTelegram;
     case kind.eMailRu:
       return eMailRu;
+    case kind.call:
+      return call;
   }
   return '';
 }
