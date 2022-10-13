@@ -2,8 +2,9 @@
   min-width: 100px;
   height: 200px;
   margin: 10px;
-  box-shadow: var(--shadow-item);
+  box-shadow: 5px 5px 15px 1px rgba(48, 49, 54, 0.5);
   border-radius: 10px;
+  background-color: #cccccc;
 
   display: flex;
   flex-direction: column;
@@ -22,7 +23,7 @@
 .img {
   min-width: 50px;
   min-height: 50px;
-  opacity: 0.8;
+  opacity: 0.9;
   transition: opacity 300ms;
   border: 2px gold dot-dash;
   outline: chocolate 2px dot-dot-dash;

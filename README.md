@@ -10,7 +10,8 @@ npm run build
 npm run deploy
 ```
 
-
+// ui - компоненты
+https://github.com/ionic-team/ionic-framework
   
 > настройка eslint, stylelint, prettier  
 https://tproger.ru/articles/podgotovka-okruzhenija-react-prilozhenija-vscode-prettier-eslint-stylelint-husky/

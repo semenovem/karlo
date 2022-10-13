@@ -17,11 +17,11 @@ export default function MainPage() {
       </Helmet>
 
       <BlockCompany />
-      <BlockPrices classname='i-block-top' />
-      <BlockVehicles classname='i-block-top' />
-      <BlockB2b classname='i-block-top' />
-      <BlockVacancies classname='i-block-top' />
-      <BlockContacts classname='i-block-top' />
+      <BlockPrices />
+      <BlockVehicles />
+      <BlockB2b />
+      <BlockVacancies />
+      <BlockContacts />
     </>
   );
 }

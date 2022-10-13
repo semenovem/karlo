@@ -9,7 +9,7 @@ export default function Layout() {
     <>
       <BlockHeader />
 
-      <main className='i-page-both'>
+      <main>
         <Outlet />
       </main>
 

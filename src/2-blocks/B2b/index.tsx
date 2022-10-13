@@ -1,26 +1,18 @@
-import cn from 'classnames';
 import React from 'react';
 
-import bgImg from './assets/img.jpg';
 import css from './style.module.css';
 
-import Poster from '5-cmp/Poster';
+import BlockLayer from '5-cmp/BlockLayer';
+import Poster from '5-cmp/Poster2';
 import TextPanel, { Paragraph as P } from '5-cmp/Text';
 
-interface IProps {
-  children?: React.ReactElement;
-  classname?: string;
-}
+import pictImg from 'assets/picts/b2b.png';
+import { IBlockPageProps } from 'types/typ';
 
-export default function BlockB2b(p: IProps) {
+export default function BlockB2b(p: IBlockPageProps) {
   return (
-    <article className={cn(p.classname)}>
-      <Poster
-        bgImg={bgImg}
-        header='СОТРУДНИЧЕСТВО С ОРГАНИЗАЦИЯМИ'
-        clsTitle={css.title}
-        classname='i-after-poster-bottom'
-      />
+    <BlockLayer className='g-bg-linear-primary'>
+      <Poster bgImg={pictImg} header='СОТРУДНИЧЕСТВО С ОРГАНИЗАЦИЯМИ' classname='i-after-poster-bottom' />
 
       <TextPanel classname=''>
         <P>Папа Карло успешно сотрудничает с организациями с 2010 года </P>
@@ -31,6 +23,6 @@ export default function BlockB2b(p: IProps) {
         <P>Обратившись к нам, вы не пожалеете</P>
         <P>С надеждой на сотрудничество Ваш Анатолий</P>
       </TextPanel>
-    </article>
+    </BlockLayer>
   );
 }

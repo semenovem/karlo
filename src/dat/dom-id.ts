@@ -1,3 +1,3 @@
-export const splashScreen = 'splash-screen';
-export const portal = 'portal';
-export const contactsMap = 'contacts-map';
+export const splashScreenDomId = 'splash-screen';
+export const portalDomId = 'portal';
+export const yaMapDomId = 'id-container-ya-map';

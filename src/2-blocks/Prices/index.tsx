@@ -1,25 +1,21 @@
-import cn from 'classnames';
 import React from 'react';
 
-import bgImg from './assets/img.jpg';
 import css from './style.module.css';
-
 import PriceTable from './Table';
 
+import BlockLayer from '5-cmp/BlockLayer';
 import ContactUs from '5-cmp/ContactUs';
-import Poster from '5-cmp/Poster';
+import Poster from '5-cmp/Poster2';
 import TextPanel, { Paragraph as P } from '5-cmp/Text';
 import H4 from '5-cmp/Text/H5';
+import pictImg from 'assets/picts/price.png';
 
-interface IProps {
-  children?: React.ReactElement;
-  classname?: string;
-}
+import { IBlockPageProps } from 'types/typ';
 
-export default function BlockPrices(p: IProps) {
+export default function BlockPrices(p: IBlockPageProps) {
   return (
-    <article className={cn(css.blk, p.classname)}>
-      <Poster bgImg={bgImg} header='ЦЕНЫ' classname='i-after-poster-bottom' />
+    <BlockLayer className='g-bg-linear-primary'>
+      <Poster bgImg={pictImg} header='ЦЕНЫ' classname='i-after-poster-bottom' />
 
       <section className=''>
         <PriceTable classname={css.priceTable} />
@@ -32,6 +28,6 @@ export default function BlockPrices(p: IProps) {
       </TextPanel>
 
       <ContactUs classname='i-mod-top' />
-    </article>
+    </BlockLayer>
   );
 }

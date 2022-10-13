@@ -30,15 +30,15 @@
   margin-top: var(--indent-m);
 }
 
-/* Верхний отступ после постера */
+/* Отступ после постера снизу */
 .i-after-poster-bottom {
   margin-bottom: var(--indent-l);
 }
 
-/* Поля страницы (не действует на header и footer) */
+/* Поля блока */
 .i-page-both {
-  margin-left: var(--i-padding-side);
-  margin-right: var(--i-padding-side);
+  padding-left: var(--i-padding-side);
+  padding-right: var(--i-padding-side);
 }
 
 /* sm */

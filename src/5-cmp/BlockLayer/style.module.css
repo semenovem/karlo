@@ -1,0 +1,11 @@
+.blockLayer {
+  background-repeat: repeat-y;
+  background-size: contain;
+  background-position: center;
+
+  position: relative;
+
+  border: 3px rebeccapurple dot-dash;
+  padding-top: var(--indent-xl);
+  padding-bottom: var(--indent-xl);
+}

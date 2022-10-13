@@ -1,25 +1,22 @@
-import cn from 'classnames';
 import React from 'react';
 
-import bgImg from './assets/img.jpg';
-
-import MapOffice from '3-mod/maps/Office';
 import ModContacts from '4-cnt/Contacts';
-import Poster from '5-cmp/Poster';
+import MapOffice from '4-cnt/maps/Office';
+import BlockLayer from '5-cmp/BlockLayer';
+import Poster from '5-cmp/Poster2';
 
-interface IProps {
-  children?: React.ReactElement;
-  classname?: string;
-}
+import pictImg from 'assets/picts/contacts.png';
 
-export default function BlockContacts(p: IProps) {
+import { IBlockPageProps } from 'types/typ';
+
+export default function BlockContacts(p: IBlockPageProps) {
   return (
-    <article className={cn(p.classname)}>
-      <Poster bgImg={bgImg} header='КОНТАКТЫ' classname='i-after-poster-bottom' />
+    <BlockLayer className='g-bg-linear-primary'>
+      <Poster bgImg={pictImg} header='КОНТАКТЫ' classname='i-after-poster-bottom' />
 
       <ModContacts classname='i-mod-top' />
 
-      <MapOffice classname='i-mod-top' />
-    </article>
+      {/*{p.classname === '23434' && <MapOffice classname='i-mod-top' />}*/}
+    </BlockLayer>
   );
 }

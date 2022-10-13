@@ -33,7 +33,10 @@ export default class Modal extends React.Component<IProps> {
     );
   }
 
+  private countClickOnOverlay = 0;
+
   private handleOverlayClick = (e: React.MouseEvent<HTMLElement>) => {
+    console.log('>>>>>>> handleOverlayClick ', ++this.countClickOnOverlay);
     this.props.onClose();
   };
 }

@@ -36,7 +36,7 @@ export default function BlockHeader(p: IProps): React.ReactElement {
         className={css.btnHum}
         kind={icKind.whatsapp}
         size={icSize.xl}
-        ariaLabel={'Открыть контакты'}
+        ariaLabel='Открыть контакты'
         onClick={() => loc.toQuickContacts(navigate, curLocation)}
       />
     </header>

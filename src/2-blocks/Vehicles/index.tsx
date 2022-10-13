@@ -1,22 +1,19 @@
 import React from 'react';
 
-import bgImg from './assets/img.jpg';
-
-import ModVehicles from '3-mod/vehicle/ListPreviews';
-import Poster from '5-cmp/Poster';
+import ModVehicles from '4-cnt/vehicle/ListPreviews';
+import BlockLayer from '5-cmp/BlockLayer';
+import Poster from '5-cmp/Poster2';
 import TextPanel, { Paragraph as P } from '5-cmp/Text';
 
+import pictImg from 'assets/picts/vehicles.png';
 import { count as countVehicles } from 'dat/vehicles';
 
-interface IProps {
-  children?: React.ReactElement;
-  classname?: string;
-}
+import { IBlockPageProps } from 'types/typ';
 
-export default function BlockVehicles(p: IProps) {
+export default function BlockVehicles(p: IBlockPageProps) {
   return (
-    <article className={p.classname}>
-      <Poster bgImg={bgImg} header='НАШ АВТОПАРК' classname='i-after-poster-bottom' />
+    <BlockLayer className='g-bg-linear-secondary'>
+      <Poster bgImg={pictImg} header='НАШ АВТОПАРК' classname='i-after-poster-bottom' />
 
       <TextPanel classname=''>
         <P>
@@ -29,6 +26,6 @@ export default function BlockVehicles(p: IProps) {
       </TextPanel>
 
       <ModVehicles classname='i-mod-top' />
-    </article>
+    </BlockLayer>
   );
 }

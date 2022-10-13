@@ -1,5 +1,4 @@
 import history from 'history/browser';
-import React from 'react';
 
 import { Helmet } from 'react-helmet';
 import { BrowserRouter, Route, Routes, useLocation, useNavigate } from 'react-router-dom';

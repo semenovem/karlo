@@ -28,6 +28,19 @@
   size: inherit;
 }
 
+.g-bg-linear-main {
+  background: linear-gradient(.25turn, #CDB5FF, #B8C0FF);
+}
+
+.g-bg-linear-primary {
+  background: linear-gradient(.25turn, #32CCA6, #80DFC9);
+}
+
+.g-bg-linear-secondary {
+  background: linear-gradient(.25turn, #F4AE72, #F7CBA4);
+}
+
+
 /* sm */
 @media (min-width: 600px) {
 }

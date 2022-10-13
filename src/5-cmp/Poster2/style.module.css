@@ -1,0 +1,59 @@
+.poster {
+  height: 250px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.title {
+  position: relative;
+  text-align: center;
+  margin-bottom: var(--indent-m);
+  color: #eeeeee;
+}
+
+.bg {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+
+/* sm */
+@media (min-width: 650px) {
+  .poster {
+    flex-direction: row;
+  }
+  .bg {
+    width: calc(100%/2 - var(--indent-l));
+    max-width: 400px;
+  }
+  .title {
+    margin-bottom: initial;
+  }
+  .title, .bg {
+    margin-left: var(--indent-m);
+    margin-right: var(--indent-m);
+  }
+}
+
+/* md */
+@media (min-width: 960px) {
+  .poster {
+  }
+}
+
+/* lg */
+@media (min-width: 1280px) {
+  .poster {
+  }
+}
+
+/* xl */
+@media (min-width: 1920px) {
+}
+
