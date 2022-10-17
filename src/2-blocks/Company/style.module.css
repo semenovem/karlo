@@ -7,3 +7,9 @@
 
   border: 3px rebeccapurple dot-dash;
 }
+
+.txt {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
