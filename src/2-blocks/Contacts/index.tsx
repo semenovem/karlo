@@ -14,9 +14,11 @@ export default function BlockContacts(p: IBlockPageProps) {
     <BlockLayer className='g-bg-linear-primary'>
       <Poster bgImg={pictImg} header='КОНТАКТЫ' classname='i-after-poster-bottom' />
 
-      <ModContacts classname='i-mod-top' />
+      <div className='g-page-content'>
+        <ModContacts classname='i-mod-top' />
 
-      {/*{p.classname === '23434' && <MapOffice classname='i-mod-top' />}*/}
+        {/*{p.classname === '23434' && <MapOffice classname='i-mod-top' />}*/}
+      </div>
     </BlockLayer>
   );
 }

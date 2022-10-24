@@ -17,17 +17,19 @@ export default function BlockPrices(p: IBlockPageProps) {
     <BlockLayer className='g-bg-linear-primary'>
       <Poster bgImg={pictImg} header='ЦЕНЫ' classname='i-after-poster-bottom' />
 
-      <section className=''>
-        <PriceTable classname={css.priceTable} />
-      </section>
+      <div className='g-page-content'>
+        <section className=''>
+          <PriceTable classname={css.priceTable} />
+        </section>
 
-      <TextPanel classname='i-mod-top'>
-        <H4 classname='g-first-line-indent'>Бизнес для Бизнеса</H4>
-        <P>Для сотрудничества с организациями у нас есть особые предложения</P>
-        <P>Посмотрите раздел Сотрудничество или свяжитесь с нами</P>
-      </TextPanel>
+        <TextPanel classname='i-mod-top'>
+          <H4 classname='g-first-line-indent'>Бизнес для Бизнеса</H4>
+          <P>Для сотрудничества с организациями у нас есть особые предложения</P>
+          <P>Посмотрите раздел Сотрудничество или свяжитесь с нами</P>
+        </TextPanel>
 
-      <ContactUs classname='i-mod-top' />
+        <ContactUs classname='i-mod-top' />
+      </div>
     </BlockLayer>
   );
 }

@@ -11,8 +11,8 @@
   --i-mod-side: var(--indent-l);
 
   /* Вертикальный/боковой отступы между элементами */
-  --i-elem-top: var(--indent-m);
-  --i-elem-side: var(--indent-m);
+  --i-elem-top: var(--indent-s);
+  --i-elem-side: var(--indent-s);
 }
 
 /* Верхний отступ между блоками */

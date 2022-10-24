@@ -19,3 +19,7 @@ export default function TextPanel(p: IProps): React.ReactElement {
 export function Paragraph(p: IPropsParagraph): React.ReactElement {
   return <p className={cn('f-main-regular', css.paragraph)}>{p.children}</p>;
 }
+
+export function TextSecond(p: IPropsParagraph): React.ReactElement {
+  return <p className={cn('f-main-regular', css.textList)}>{p.children}</p>;
+}

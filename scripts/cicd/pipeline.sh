@@ -19,7 +19,7 @@ mv .git ../deploy || exit 1
 mv build ../deploy/docs || exit 1
 cd ../deploy || exit 1
 
-echo 'beta.evgio.dev' >docs/CNAME || exit 1
+echo 'glazkoff.ru' >docs/CNAME || exit 1
 
 echo '*' >.gitignore || exit 1
 echo '!.gitignore' >>.gitignore || exit 1

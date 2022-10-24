@@ -1,7 +1,5 @@
 import React from 'react';
 
-import css from './style.module.css';
-
 import BlockLayer from '5-cmp/BlockLayer';
 import Poster from '5-cmp/Poster2';
 import TextPanel, { Paragraph as P } from '5-cmp/Text';
@@ -14,7 +12,7 @@ export default function BlockCompany(p: IBlockPageProps) {
     <BlockLayer className='g-bg-linear-main'>
       <Poster bgImg={topImg} header='О КОМПАНИИ' classname='i-after-poster-bottom' />
 
-      <div className={css.txt}>
+      <div className={'g-page-content'}>
         <TextPanel classname=''>
           <P>ИП Глазков осуществляет грузоперевозки с 2011 года</P>
           <P>Свой автопарк, состояший из более 10 грузовых машин</P>

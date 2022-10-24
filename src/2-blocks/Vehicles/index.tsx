@@ -15,17 +15,19 @@ export default function BlockVehicles(p: IBlockPageProps) {
     <BlockLayer className='g-bg-linear-secondary'>
       <Poster bgImg={pictImg} header='НАШ АВТОПАРК' classname='i-after-poster-bottom' />
 
-      <TextPanel classname=''>
-        <P>
-          Наш собственный автопарк - {countVehicles} машин
-          <br />
-          Все машины регулярно проходят техосмотр. Имеют резину по сезону
-          <br />
-          Есть разрешение для въезда в центр
-        </P>
-      </TextPanel>
+      <div className='g-page-content'>
+        <TextPanel classname=''>
+          <P>
+            Наш собственный автопарк - {countVehicles} машин
+            <br />
+            Все машины регулярно проходят техосмотр. Имеют резину по сезону
+            <br />
+            Есть разрешение для въезда в центр
+          </P>
+        </TextPanel>
 
-      <ModVehicles classname='i-mod-top' />
+        <ModVehicles classname='i-mod-top' />
+      </div>
     </BlockLayer>
   );
 }

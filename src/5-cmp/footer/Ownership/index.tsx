@@ -8,5 +8,5 @@ interface IProps {
 }
 
 export default function Ownership(props: IProps): React.ReactElement {
-  return <div className={cn(css.item, props.className)}>{'© 2014     ИП Глазков'}</div>;
+  return <div className={cn(css.item, props.className)}>{'© 2011     ИП Глазков'}</div>;
 }

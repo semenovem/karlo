@@ -14,15 +14,17 @@ export default function BlockVacancies(p: IBlockPageProps) {
     <BlockLayer className='g-bg-linear-secondary'>
       <Poster bgImg={pictImg} header='ВАКАНСИИ' classname='i-after-poster-bottom' />
 
-      <Previews />
+      <div className='g-page-content'>
+        <Previews />
 
-      <Text classname='i-mod-top'>
-        <P>
-          Что бы откликнутся, позвоните на номер телефона:
-          <br />
-          +7 (926) 334-55-66
-        </P>
-      </Text>
+        <Text classname='i-mod-top'>
+          <P>
+            Что бы откликнутся, позвоните на номер телефона:
+            <br />
+            +7 (926) 334-55-66
+          </P>
+        </Text>
+      </div>
     </BlockLayer>
   );
 }
