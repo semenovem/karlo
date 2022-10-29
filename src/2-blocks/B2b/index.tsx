@@ -17,13 +17,14 @@ export default function BlockB2b(p: IBlockPageProps) {
 
       <div className='g-page-content'>
         <TextPanel classname=''>
-          <P>Папа Карло успешно сотрудничает с организациями с 2010 года </P>
+          <P>Мы успешно сотрудничаем с организациями с 2011 года </P>
           <P>
             Мы готовы своевременно и качественно закрыть потребность в доставке мебели.
             <br /> также оказываем услуги сборки мебели
           </P>
           <P>Обратившись к нам, вы не пожалеете</P>
           <P>С надеждой на сотрудничество Ваш Анатолий</P>
+          Возможно приобретение А/М под клиента. Регулярное обновление автопарка
         </TextPanel>
 
         <TextPanel classname='i-elem-top'>
@@ -38,9 +39,13 @@ export default function BlockB2b(p: IBlockPageProps) {
             <TextSecond>Автопарк не старше 5-и лет</TextSecond>
             <TextSecond>Возможно брендирование автомобиля</TextSecond>
             <TextSecond>Квалифицированные, профессиональные водители</TextSecond>
+            <TextSecond>Страхование груза</TextSecond>
           </div>
         </TextPanel>
       </div>
     </BlockLayer>
   );
 }
+
+// мы предоставляем услуги по доставке
+// аренда автомобиля с водителем - 10к 8 часов / до 200км по Москве и МО

@@ -20,15 +20,18 @@ export default function BlockFooter(props: IProps): React.ReactElement {
         <Column className={css.col}>
           <Item className={css.item} content={'О Компании'} goTo={loc.company} />
           <Item className={css.item} content={'Цены'} goTo={loc.prices} />
+          <Item className={css.item} content={'Аренда'} goTo={loc.b2b} />
         </Column>
 
         <Column className={css.col}>
           <Item className={css.item} content={'Автопарк'} goTo={loc.vehicle} />
           <Item className={css.item} content={'Сотрудничество'} goTo={loc.b2b} />
+          <Item className={css.item} content={'Мы сотрудничаем'} goTo={loc.b2b} />
         </Column>
 
         <Column className={css.col}>
           <Item className={css.item} content={'Вакансии'} goTo={loc.vacancies} />
+          <Item className={css.item} content='&nbsp;' goTo={loc.contacts} />
           <Item className={css.item} content={'Контакты'} goTo={loc.contacts} />
         </Column>
       </div>

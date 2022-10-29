@@ -18,7 +18,7 @@ export default function BlockVehicles(p: IBlockPageProps) {
       <div className='g-page-content'>
         <TextPanel classname=''>
           <P>
-            Наш собственный автопарк - {countVehicles} машин
+            Наш собственный автопарк - {countVehicles} машин (1.5 тонники)
             <br />
             Все машины регулярно проходят техосмотр. Имеют резину по сезону
             <br />

@@ -23,3 +23,7 @@ export function Paragraph(p: IPropsParagraph): React.ReactElement {
 export function TextSecond(p: IPropsParagraph): React.ReactElement {
   return <p className={cn('f-main-regular', css.textList)}>{p.children}</p>;
 }
+
+export function Info(p: IPropsParagraph): React.ReactElement {
+  return <p className={cn(css.textList)}>{p.children}</p>;
+}

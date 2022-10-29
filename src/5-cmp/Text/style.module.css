@@ -13,6 +13,13 @@
   font-size: 17px;
 }
 
+.info {
+  line-height: 28px;
+  font-weight: 400;
+  font-size: 18px;
+  text-align: justify;
+}
+
 .paragraph + .paragraph {
   margin-top: var(--i-elem-top);
 }

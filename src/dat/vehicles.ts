@@ -178,4 +178,5 @@ export const vehicles: IVehicle[] = originalSetVehicles.sort((a, b) => {
   return 0;
 });
 
-export const count = vehicles.length;
+// Количество машин
+export const count = vehicles.length * 3 + 2;

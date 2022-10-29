@@ -5,6 +5,8 @@ import css from './style.module.css';
 
 import Icon, { kind, size as btnSize } from '5-cmp/Icon';
 
+import { phoneMainPretty } from 'dat/contacts';
+
 interface IProps {
   classname?: string;
 }
@@ -12,7 +14,7 @@ interface IProps {
 export default function ModContacts(p: IProps) {
   return (
     <div className={cn(css.content, p.classname)}>
-      <Line icon={kind.call} text='+7 926 564 11 22' />
+      <Line icon={kind.call} text={phoneMainPretty} />
       <Line icon={kind.whatsapp} text='Написать в whatsapp' />
       <Line icon={kind.telegram} text='Написать в telegram' />
       <Line icon={kind.eMailRu} text='Написать письмо' />

@@ -9,3 +9,30 @@
   padding-top: var(--indent-xl);
   padding-bottom: var(--indent-xl);
 }
+
+.content {
+  margin-left: var(--indent-l);
+  margin-right: var(--indent-l);
+}
+
+/* sm */
+@media (min-width: 600px) {
+}
+
+/* md */
+@media (min-width: 960px) {
+  .content {
+    /*border: #592385 3px solid ;*/
+    margin-left: calc(var(--indent-xxl) * 3);
+    margin-right: calc(var(--indent-xxl) * 3);
+  }
+}
+
+/* lg */
+@media (min-width: 1280px) {
+}
+
+/* xl */
+@media (min-width: 1920px) {
+}
+
