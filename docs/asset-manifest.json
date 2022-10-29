@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/static/css/main.ad141eb0.css",
+    "main.js": "/static/js/main.dd49c431.js",
+    "static/js/787.ed3c8be6.chunk.js": "/static/js/787.ed3c8be6.chunk.js",
+    "static/media/company.png": "/static/media/company.aae319d9063dcf34f21e.png",
+    "static/media/vehicles.png": "/static/media/vehicles.017d6103f96d09c935af.png",
+    "static/media/price.png": "/static/media/price.48eeaf3119d0eb1e9daf.png",
+    "static/media/b2b.png": "/static/media/b2b.b17782fc3eed125cc39b.png",
+    "static/media/contacts.png": "/static/media/contacts.efb14bc3d1b01bb2e097.png",
+    "static/media/vacancy.png": "/static/media/vacancy.b877cc22998b60c13c6b.png",
+    "static/media/contacts-us.jpg": "/static/media/contacts-us.ab304bae19096329df87.jpg",
+    "static/media/whatsapp.svg": "/static/media/whatsapp.7fc7a342cdd50561c9bf781f94481fd5.svg",
+    "static/media/email-mail.ru.svg": "/static/media/email-mail.ru.ad8bc1dc7c7d8039efbc70f6dc68c88d.svg",
+    "static/media/msg-telegram.svg": "/static/media/msg-telegram.3a84487626f600b34bbbfdb35be1b3ab.svg",
+    "static/media/arrow-up.svg": "/static/media/arrow-up.ba1a5a9b649e79393b396481e457d2c9.svg",
+    "static/media/cross.svg": "/static/media/cross.d15619cf2b3c50ae3455c9c352fccaed.svg",
+    "index.html": "/index.html",
+    "static/media/call.svg": "/static/media/call.bad1a37b240b9bc17b7270417cad7793.svg",
+    "static/media/3-line.svg": "/static/media/3-line.28bb1fddf3b8d9617aae2fcaba06b274.svg",
+    "main.ad141eb0.css.map": "/static/css/main.ad141eb0.css.map",
+    "main.dd49c431.js.map": "/static/js/main.dd49c431.js.map",
+    "787.ed3c8be6.chunk.js.map": "/static/js/787.ed3c8be6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ad141eb0.css",
+    "static/js/main.dd49c431.js"
+  ]
+}
