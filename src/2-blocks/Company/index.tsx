@@ -1,8 +1,8 @@
 import React from 'react';
 
-import Content from '../../5-cmp/BlockLayer/Content';
-
 import BlockLayer from '5-cmp/BlockLayer';
+import Content from '5-cmp/BlockLayer/Content';
+
 import Poster from '5-cmp/Poster2';
 import TextPanel, { Paragraph as P } from '5-cmp/Text';
 import H4 from '5-cmp/Text/H4';

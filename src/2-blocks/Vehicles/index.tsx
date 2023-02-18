@@ -2,6 +2,7 @@ import React from 'react';
 
 import ModVehicles from '4-cnt/vehicle/ListPreviews';
 import BlockLayer from '5-cmp/BlockLayer';
+import Content from '5-cmp/BlockLayer/Content';
 import Poster from '5-cmp/Poster2';
 import TextPanel, { Paragraph as P } from '5-cmp/Text';
 
@@ -15,10 +16,10 @@ export default function BlockVehicles(p: IBlockPageProps) {
     <BlockLayer className='g-bg-linear-secondary'>
       <Poster bgImg={pictImg} header='НАШ АВТОПАРК' classname='i-after-poster-bottom' />
 
-      <div className='g-page-content'>
+      <Content>
         <TextPanel classname=''>
           <P>
-            Наш собственный автопарк - {countVehicles} машин (1.5 тонники)
+            Наш собственный автопарк - {countVehicles} машин (1.5 тонники) не старше 5-и лет
             <br />
             Все машины регулярно проходят техосмотр. Имеют резину по сезону
             <br />
@@ -26,8 +27,8 @@ export default function BlockVehicles(p: IBlockPageProps) {
           </P>
         </TextPanel>
 
-        <ModVehicles classname='i-mod-top' />
-      </div>
+        {/*<ModVehicles classname='i-mod-top' />*/}
+      </Content>
     </BlockLayer>
   );
 }
